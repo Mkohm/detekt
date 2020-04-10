@@ -76,6 +76,13 @@ jobs:
     - name: Verify Generator Output
       run: ./gradlew verifyGeneratorOutput
 
+    - name: Setup Ruby for use with actions
+      uses: actions/setup-ruby@v1.0.0
+
+    - name: Run Danger
+      run: gem install bundler && bundle install && bundle update danger && bundle exec danger --verbose
+      env:
+        DANGER_GITHUB_API_TOKEN: d643c8da38887ebd9eb70d7805f3fbffe62f40b1
 
     - name: Generate Coverage Report
       run: ./gradlew jacocoTestReport
