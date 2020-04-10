@@ -317,6 +317,7 @@ allprojects {
     dependencies {
         detekt(project(":detekt-cli"))
         detektPlugins(project(":detekt-formatting"))
+        detektPlugins("io.github.mkohm:detekt-hint:0.1.2")
     }
 }
 
