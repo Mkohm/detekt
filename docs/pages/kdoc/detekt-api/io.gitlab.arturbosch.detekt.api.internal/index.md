@@ -16,9 +16,12 @@ title: io.gitlab.arturbosch.detekt.api.internal - detekt-api
 | [DefaultRuleSetProvider](-default-rule-set-provider.html) | Interface which marks sub-classes as provided by detekt via the rules sub-module.`interface DefaultRuleSetProvider : `[`RuleSetProvider`](../io.gitlab.arturbosch.detekt.api/-rule-set-provider/index.html) |
 | [DetektPomModel](-detekt-pom-model/index.html) | Adapted from https://github.com/pinterest/ktlint/blob/master/ktlint-core/src/main/kotlin/com/pinterest/ktlint/core/KtLint.kt Licenced under the MIT licence - https://github.com/pinterest/ktlint/blob/master/LICENSE`class DetektPomModel : UserDataHolderBase, PomModel` |
 | [DisabledAutoCorrectConfig](-disabled-auto-correct-config/index.html) | `class DisabledAutoCorrectConfig : `[`Config`](../io.gitlab.arturbosch.detekt.api/-config/index.html)`, `[`ValidatableConfiguration`](-validatable-configuration/index.html) |
+| [Extendable](-extendable/index.html) | `open class Extendable` |
 | [FailFastConfig](-fail-fast-config/index.html) | `data class FailFastConfig : `[`Config`](../io.gitlab.arturbosch.detekt.api/-config/index.html)`, `[`ValidatableConfiguration`](-validatable-configuration/index.html) |
+| [OtherTest](-other-test/index.html) | `class OtherTest : `[`Extendable`](-extendable/index.html) |
 | [PathFilters](-path-filters/index.html) | `class PathFilters` |
 | [SimpleNotification](-simple-notification/index.html) | `data class SimpleNotification : `[`Notification`](../io.gitlab.arturbosch.detekt.api/-notification/index.html) |
+| [Test](-test/index.html) | `class Test : `[`Extendable`](-extendable/index.html) |
 | [ValidatableConfiguration](-validatable-configuration/index.html) | `interface ValidatableConfiguration` |
 | [YamlConfig](-yaml-config/index.html) | Config implementation using the yaml format. SubConfigurations can return sub maps according to the yaml specification.`class YamlConfig : `[`BaseConfig`](-base-config/index.html)`, `[`ValidatableConfiguration`](-validatable-configuration/index.html) |
 

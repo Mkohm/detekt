@@ -184,6 +184,11 @@ Stores information about a specific code fragment.
 
 |
 
+##### [io.gitlab.arturbosch.detekt.api.internal.Extendable](../io.gitlab.arturbosch.detekt.api.internal/-extendable/index.html)
+
+
+|
+
 ##### [io.gitlab.arturbosch.detekt.api.Extension](../io.gitlab.arturbosch.detekt.api/-extension/index.html)
 
 Defines extension points in detekt.
@@ -309,6 +314,11 @@ your kotlin file is a notification.
 
 |
 
+##### [io.gitlab.arturbosch.detekt.api.internal.OtherTest](../io.gitlab.arturbosch.detekt.api.internal/-other-test/index.html)
+
+
+|
+
 ##### [io.gitlab.arturbosch.detekt.api.OutputReport](../io.gitlab.arturbosch.detekt.api/-output-report/index.html)
 
 Translates detekt's result container - [Detektion](../io.gitlab.arturbosch.detekt.api/-detektion/index.html) - into an output report
@@ -409,6 +419,11 @@ yaml config and test for their appearance in specific rules.
 | (extensions in package io.gitlab.arturbosch.detekt.api)
 
 ##### [kotlin.String](../io.gitlab.arturbosch.detekt.api/kotlin.-string/index.html)
+
+
+|
+
+##### [io.gitlab.arturbosch.detekt.api.internal.Test](../io.gitlab.arturbosch.detekt.api.internal/-test/index.html)
 
 
 |
