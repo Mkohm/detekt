@@ -367,7 +367,7 @@ task<Detekt>("detektHint") {
     reports {
         xml {
             enabled = true
-            destination = file("$rootDir/build/reports/detekt-hint-report.xml")
+            destination = file("$buildDir/reports/detekt-hint-report.xml")
         }
         html.enabled = false
         txt.enabled = false
