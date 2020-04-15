@@ -366,7 +366,8 @@ task<Detekt>("detektHint") {
     classpath.setFrom(detektClasspath)
     reports {
         xml {
-            destination = file("build/reports/detekt-hint-report.xml")
+            enabled = true
+            destination = file("$rootDir/build/reports/detekt-hint-report.xml")
         }
         html.enabled = false
         txt.enabled = false
