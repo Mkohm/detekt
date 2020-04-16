@@ -82,7 +82,7 @@ jobs:
     - name: Run Danger
       run: gem install bundler && bundle install && bundle update danger && bundle exec danger --verbose
       env:
-        DANGER_GITHUB_API_TOKEN: d643c8da38887ebd9eb70d7805f3fbffe62f40b1
+        DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Generate Coverage Report
       run: ./gradlew jacocoTestReport
