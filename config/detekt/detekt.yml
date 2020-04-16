@@ -1,5 +1,5 @@
 build:
-  maxIssues: 4
+  maxIssues: 1
 
 # can be removed after 1.7.0 is published
 config:
