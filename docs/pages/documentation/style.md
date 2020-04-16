@@ -259,7 +259,7 @@ development. Offending code comments will then be reported.
 
 #### Configuration options:
 
-* ``values`` (default: ``'TODO:,FIXME:,STOPSHIP:'``)
+* ``values`` (default: ``['TODO:', 'FIXME:', 'STOPSHIP:']``)
 
    forbidden comment strings
 
@@ -414,7 +414,7 @@ as a `const val`.
 
    excluded functions
 
-* ``excludeAnnotatedFunction`` (default: ``'dagger.Provides'``)
+* ``excludeAnnotatedFunction`` (default: ``['dagger.Provides']``)
 
    allows to provide a list of annotations that disable this check
 
@@ -501,7 +501,7 @@ describing what the magic number means.
 
 #### Configuration options:
 
-* ``ignoreNumbers`` (default: ``'-1,0,1,2'``)
+* ``ignoreNumbers`` (default: ``['-1', '0', '1', '2']``)
 
    numbers which do not count as magic numbers
 
@@ -1138,7 +1138,7 @@ refactored into concrete classes.
 
 #### Configuration options:
 
-* ``excludeAnnotatedClasses`` (default: ``'dagger.Module'``)
+* ``excludeAnnotatedClasses`` (default: ``['dagger.Module']``)
 
    Allows you to provide a list of annotations that disable
 this check.
@@ -1420,7 +1420,7 @@ Read more about `data class`: https://kotlinlang.org/docs/reference/data-classes
 
 #### Configuration options:
 
-* ``excludeAnnotatedClasses`` (default: ``''``)
+* ``excludeAnnotatedClasses`` (default: ``[]``)
 
    allows to provide a list of annotations that disable this check
 

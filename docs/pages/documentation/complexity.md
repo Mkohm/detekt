@@ -114,7 +114,7 @@ Each one of them adds one to the complexity count.
    Whether to ignore functions which are often used instead of an `if` or
 `for` statement
 
-* ``nestingFunctions`` (default: ``run,let,apply,with,also,use,forEach,isNotNull,ifNull``)
+* ``nestingFunctions`` (default: ``[run, let, apply, with, also, use, forEach, isNotNull, ifNull]``)
 
    Comma separated list of function names which add complexity
 
@@ -240,9 +240,10 @@ Reports functions and constructors which have more parameters than a certain thr
 
    ignore long constructor parameters list for data classes
 
-* ``ignoreAnnotated`` (default: ``''``)
+* ``ignoreAnnotated`` (default: ``[]``)
 
-   ignore long parameters list for constructors or functions in the context of these comma-separated annotation class names
+   ignore long parameters list for constructors or functions in the context of these
+annotation class names
 
 ### MethodOverloading
 
