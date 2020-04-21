@@ -23,6 +23,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run detekt hint
-        uses: Mkohm/detekt-hint-docker-action@master
+        uses: Mkohm/detekt-hint-docker-action@v1.3
         env:
           DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
