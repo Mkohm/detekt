@@ -11,6 +11,7 @@ on:
 jobs:
   gradle:
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
         jdk: [8, 11, 13]
@@ -75,13 +76,6 @@ jobs:
 
     - name: Verify Generator Output
       run: ./gradlew verifyGeneratorOutput
-      
-    - name: Generate Coverage Report
-      run: ./gradlew jacocoTestReport
-    - name: Publish Coverage
-      if: success()
-      run: bash <(curl -s https://codecov.io/bash)
-      shell: bash
 
     # We stop gradle at the end to make sure the cache folders
     # don't contain any lock files and are free to be cached.
