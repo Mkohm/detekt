@@ -34,3 +34,6 @@ jobs:
             args: "--id DangerKotlinAction"
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        continue-on-error: true
+
