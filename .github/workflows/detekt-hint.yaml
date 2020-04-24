@@ -25,6 +25,7 @@ jobs:
       - name: Run detekt hint
         uses: Mkohm/kotlin@master
         
+        
         with:
           args: "--id DangerKotlinAction"
         env:
