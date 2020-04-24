@@ -22,19 +22,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
-<<<<<<< HEAD
       - name: Run detekt hint
         uses: Mkohm/kotlin@master
           with:
             args: "--id DangerKotlinAction"
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-=======
-
-      - name: Run detekt hint
-        uses: Mkohm/kotlin@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
-
->>>>>>> 1cf53f602691e3079d71a3d29b8a9760394cf08b
