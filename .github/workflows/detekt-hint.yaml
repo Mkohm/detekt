@@ -24,10 +24,6 @@ jobs:
 
 
 
-
-
-
-
       - name: Run detekt hint
         uses: Mkohm/kotlin@master
         env:
