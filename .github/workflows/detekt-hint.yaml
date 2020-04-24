@@ -21,9 +21,7 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-
-
-
+        
       - name: Run detekt hint
         uses: mkohm/detekt-hint-docker-action@master
         with:
