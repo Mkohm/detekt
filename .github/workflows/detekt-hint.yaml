@@ -30,9 +30,6 @@ jobs:
 
       - name: Run detekt hint
         uses: Mkohm/kotlin@master
-        
-        with:
-          args: "--id DangerKotlinAction"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
