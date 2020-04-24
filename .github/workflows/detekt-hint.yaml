@@ -24,6 +24,7 @@ jobs:
 
 
 
+
       - name: Run detekt hint
         uses: mkohm/detekt-hint-docker-action@master
         with:
