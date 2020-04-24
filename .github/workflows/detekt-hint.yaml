@@ -29,6 +29,8 @@ jobs:
 
 
       - name: Run detekt hint
-        uses: Mkohm/detekt-hint-docker-action@master
-        env:
-          DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: Mkohm/kotlin@master
+          with:
+            args: "--id DangerKotlinAction"
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
